@@ -28,31 +28,30 @@
             android:src="@drawable/perco" />
 
 
-            <EditText
-                android:id="@+id/email"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:hint="@string/hint_email"
-                android:inputType="textEmailAddress"
-                android:maxLines="1"
-                android:singleLines="true"
-                android:textColor="@android:color/white" />
+        <EditText
+            android:id="@+id/email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/hint_email"
+            android:inputType="textEmailAddress"
+            android:maxLines="1"
+            android:singleLines="true"
+            android:textColor="@android:color/white" />
 
 
-
-            <EditText
-                android:id="@+id/password"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="20dp"
-                android:focusableInTouchMode="true"
-                android:hint="@string/hint_password"
-                android:imeActionsId="@+id/login"
-                android:imeOptions="actionUnspecified"
-                android:inputType="textPassword"
-                android:maxLines="1"
-                android:singleLines="true"
-                android:textColor="@android:color/white" />
+        <EditText
+            android:id="@+id/password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:focusableInTouchMode="true"
+            android:hint="@string/hint_password"
+            android:imeActionsId="@+id/login"
+            android:imeOptions="actionUnspecified"
+            android:inputType="textPassword"
+            android:maxLines="1"
+            android:singleLines="true"
+            android:textColor="@android:color/white" />
 
         <Button
             android:id="@+id/sign_up_button"
@@ -84,8 +83,17 @@
             android:textAllCaps="false"
             android:textSize="16dp" />
 
-
     </LinearLayout>
+
+    <ProgressBar
+        android:id="@+id/progress_bar"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_gravity="center|bottom"
+        app:layout_constraintStart_toStartOf="@+id/linearLayout"
+        app:layout_constraintTop_toTopOf="@+id/linearLayout"
+        android:visibility="gone"
+        android:layout_marginBotton="20dp"/>
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
